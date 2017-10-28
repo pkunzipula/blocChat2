@@ -1,0 +1,21 @@
+<div class="wrap">
+	<div class="nav-bar">
+		<h1 class="hero-title">Chat Rooms</h1>
+		<button class="new-room-button" ng-click="main.openRoomModal()">Add a Room</button>
+		<ul class="rooms-list">
+			<li ng-repeat="room in main.chatRoomArray" ng-click="main.setCurrentRoom(room)">
+				{{ room.$value }}
+			</li>
+		</ul>
+	</div>
+	<div class="room-view">
+		<h1 class="room-title">{{ main.currentRoomTitle }}</h1>
+		<ul class="messages-list">
+			<li ng-repeat="message in main.messageArray">
+				<span class="message-username">{{ message.username}}</span>
+				<span class="message-time">{{ message.sentAt }}</span><br/>
+				{{ message.content }}
+			</li>
+		</ul>
+	</div>
+</div>
