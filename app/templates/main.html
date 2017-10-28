@@ -13,9 +13,19 @@
 		<ul class="messages-list">
 			<li ng-repeat="message in main.messageArray">
 				<span class="message-username">{{ message.username}}</span>
-				<span class="message-time">{{ message.sentAt }}</span><br/>
+				<span class="message-time">{{ message.sentAt | date: "medium" }}</span><br/>
 				{{ message.content }}
 			</li>
 		</ul>
+    	<div class="message-form">
+	    	<form class="field has-addons" ng-submit="main.sendMessage()">
+				<p class="control is-expanded">
+					<input class="input" type="text" placeholder="Awaiting your wisdom..." ng-model="main.message">
+				</p>
+				<p class="control">
+					<button class="button">Send</button>
+				</p>
+			</form>
+		</div>
 	</div>
 </div>
