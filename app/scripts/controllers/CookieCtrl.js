@@ -5,7 +5,9 @@
 			$uibModal.open({
 				templateUrl: '/templates/userModal.html',
 				controller: 'UserModalCtrl',
-				controllerAs: 'userModal'
+				controllerAs: 'userModal',
+				backdrop: 'static',
+				keyboard: false
 			});
 		}
 	}
