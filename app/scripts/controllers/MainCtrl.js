@@ -2,14 +2,17 @@
 	function MainCtrl(Room, Message, $uibModal) {
 		var main = this;
 		main.chatRoomArray = Room.all;
-		main.currentRoomTitle = "Pick a room to read messages";
+
 		main.openRoomModal = function() {
 			var modalInstance = $uibModal.open({
-				templateUrl: '/templates/modal.html',
-				controller: 'ModalCtrl',
-				controllerAs: 'modal'
+				templateUrl: '/templates/roomModal.html',
+				controller: 'RoomModalCtrl',
+				controllerAs: 'roomModal'
 			});
 		};
+
+		main.currentRoomId = undefined;
+		main.currentRoomTitle = "Pick a room to read messages";
 		main.setCurrentRoom = function(room) {
 			main.messageArray = Message.getRoomById(room.$id);
 			console.log(room.$id);
