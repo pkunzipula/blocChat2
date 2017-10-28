@@ -28,9 +28,14 @@
   padding-top: 1rem;
 }
 
-.rooms-list li{
+.rooms-list li {
   font-size: 1.0rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.rooms-list li:hover {
+  font-weight: bold;
 }
 
 .wrap {

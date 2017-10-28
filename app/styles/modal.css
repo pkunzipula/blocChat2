@@ -44,7 +44,7 @@
     border: none;
 }
 
-.modal-button.create {
+.modal-button.create.user {
     width: 288px;
 }
 

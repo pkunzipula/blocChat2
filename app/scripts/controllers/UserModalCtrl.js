@@ -7,7 +7,7 @@
 			if(userModal.username) {
 				$cookies.put('blocChatCurrentUser', userModal.username);
 				$uibModalInstance.close();
-				alert('Nice to meet you ' + userModal.username + "!")
+				return userModal.username;
 			} else {
 				alert('Try again, Skippy. SAY! That\'s a good name for ya. Whaddya say, ol\' Skip, ol\' buddy, ole pal?');
 			}
