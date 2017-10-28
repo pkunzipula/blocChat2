@@ -1,0 +1,95 @@
+.hero-title {
+  margin-right: 1.0rem;
+  margin-bottom: 0rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.new-room-button {
+  height: 1.6rem;
+  margin-top: 0.3rem;
+  padding: 0.28rem 0.6rem 0.25rem 0.6rem;
+  display: inline-block;
+  vertical-align: text-bottom;
+  background-color: rgb(245, 245, 245);
+  color: #666666;
+  border: none;
+  font-size: .8rem;
+}
+
+.new-room-button:hover {
+  background-color: rgb(251, 251, 251);
+}
+
+.rooms-list {
+  list-style-type: none;
+  padding-left: 0.1rem;
+  padding-top: 1rem;
+}
+
+.rooms-list li{
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+}
+
+.wrap {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar {
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #DDDDDD;
+  box-sizing: border-box;
+  width: 32%;
+  max-width: 320px;
+  min-width: 320px;
+  height: 100%;
+  overflow: auto;
+  color: #444444;
+  float: left;
+}
+
+.room-view {
+  height: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.4rem;
+  background-color: white;
+  overflow: auto;
+}
+
+.room-title {
+  font-size: 1.3rem;
+  padding-left: 14px;
+}
+
+.messages-list {
+  list-style-type: none;
+}
+
+.messages-list li {
+  padding: 8px 14px;
+  background-color: #eee;
+}
+
+.messages-list li:nth-child(odd) {
+  background-color: white;
+}
+
+.message-username {
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.message-time {
+  float: right;
+  font-size: .8rem;
+  font-style: italic;
+}
