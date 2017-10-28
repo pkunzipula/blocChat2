@@ -1,6 +1,13 @@
 (function() {
 	function BlocChatCookies($cookies, $uibModal) {
-		alert("HEY NOW!");
+		var currentUser = $cookies.get('blocChatCurrentUser');
+		if(!currentUser || currentUser === '') {
+			$uibModal.open({
+				templateUrl: '/templates/userModal.html',
+				controller: 'UserModalCtrl',
+				controllerAs: 'userModal'
+			});
+		}
 	}
 	angular
 		.module('blocChat')

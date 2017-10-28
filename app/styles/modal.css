@@ -21,6 +21,11 @@
 
 .modal-title {
     margin: 0 0 0.8rem 0;
+    font-weight: bold;
+}
+
+.status-bar {
+    font-size: .8rem;
 }
 
 .room-input {
